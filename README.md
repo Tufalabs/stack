@@ -13,7 +13,7 @@ Dockerfiles with rolling-release Lambda Stack, designed for use with nvidia-cont
 Build the image with the appropriate command for the distribution you wish to use.
 Note that only current LTS versions are supported: 20.04, 22.04, and 24.04.
 
-```
+```bash
 sudo docker build -t tufa-stack:24.04 --build-arg UBUNTU_VERSION=24.04 .
 ```
 
@@ -21,7 +21,11 @@ Note that building these docker images requires acceptance of the [cuDNN license
 
 ### Pushing images
 
-```
+First make sure you are [authenticated with `ghcr.io`](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry#authenticating-with-a-personal-access-token-classic).
+
+Then run:
+
+```bash
 sudo docker tag tufa-stack:24.04 ghcr.io/dominiquegarmier/tufa-stack:24.04
 sudo docker push ghcr.io/dominiquegarmier/tufa-stack:24.04
 ```
