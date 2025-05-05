@@ -26,6 +26,6 @@ First make sure you are [authenticated with `ghcr.io`](https://docs.github.com/e
 Then run:
 
 ```bash
-sudo docker tag tufa-stack:24.04 ghcr.io/dominiquegarmier/tufa-stack:24.04
-sudo docker push ghcr.io/dominiquegarmier/tufa-stack:24.04
+sudo docker tag tufa-stack:24.04 ghcr.io/tufalabs/stack:24.04
+sudo docker push ghcr.io/tufalabs/stack:24.04
 ```
